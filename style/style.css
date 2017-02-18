@@ -19,7 +19,7 @@ body {
     color: #333333;
 }
 
-.content {
+.wrapper {
     padding-top: 200px;
     margin: 0 auto;
     width: 562px;
@@ -105,7 +105,12 @@ a {
     margin-bottom: 20px;
 }
 
-.main-text article:after {
+.main-text p {
+    font-size: 0.75em;
+}
+
+.main-text p:after,
+.pictures article:after {
     content: '';
     display: block;
     height: 0;
@@ -113,9 +118,12 @@ a {
     visibility: hidden;
 }
 
-.paragraph {
-    margin-bottom: 20px;
-    font-size: 0.75em;
+.main-text p:first-child {
+    margin-right: 6px;
+}
+
+.main-text p:nth-child(2) {
+    margin-bottom: 15px;
 }
 
 .left-img {
@@ -126,21 +134,24 @@ a {
 
 .right-img {
     float: right;
-    padding-left: 5px;
+    padding-left: 8px;
     max-width: 240px;
 }
 
 .pictures {
     margin-top: 18px;
-    margin-bottom: 15px;
 }
 
 .pictures img {
     max-width: 195px;
 }
 
-.pictures article:first-child {
-    padding-bottom: 15px;
+.pictures article {
+    margin-bottom: 15px;
+}
+
+.left {
+    float: left;
 }
 
 .right {
@@ -148,7 +159,8 @@ a {
 }
 
 footer {
-    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 footer p {
@@ -161,7 +173,6 @@ footer p {
     bottom: 40px;
     right: 0;
     width: 90px;
-    min-height: 68px;
     background-color: #fbaf5d;
     border: 1px solid black;
 }
@@ -171,9 +182,13 @@ footer p {
 }
 
 .share-links section:first-child {
-    padding: 10px 2px 3px 7px;
+    padding: 10px 2px 8px 7px;
 }
 
 .links-img {
     margin-top: 5px;
+}
+
+.links-img img {
+    max-width: 22px;
 }
